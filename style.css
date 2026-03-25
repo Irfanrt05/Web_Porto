@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #e8dfd8;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  color: #3e2f26;
+}
+
+/* container */
+.container {
+  background: #fdfaf7;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 25px;
+  padding: 60px;
+  box-shadow: 0 30px 60px rgba(62, 47, 38, 0.15);
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #5a3e2b;
+}
+
+/* navbar */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #6b4f3a;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #a47148;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #a47148;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* home */
+.hero {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #4a3425;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #7a5c48;
+}
+
+/* tentang */
+.tentang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.tentang-text {
+  flex: 1;
+}
+
+.tentang-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #5a3e2b;
+}
+
+.tentang-text p {
+  line-height: 1.7;
+  color: #6b4f3a;
+}
+
+/* foto */
+.foto {
+  width: 260px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(90, 62, 43, 0.2);
+  transition: 0.4s ease;
+}
+
+/* kontak */
+.kontak {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.kontak h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #5a3e2b;
+}
+
+.kontak p {
+  margin-bottom: 5px;
+  color: #7a5c48;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #8c6f5c;
+  border-top: 1px solid #e5d8cf;
+  padding-top: 20px;
+}
